@@ -1,26 +1,31 @@
 # Dev Store Scrub
 
-A simple yet powerful browser extension for developers to manage application storage in Chrome and Edge browsers. This tool provides a simple interface to clear and manage session storage, local storage, and cookies directly from the browser toolbar.
+A simple yet powerful browser extension for Chrome and Edge that helps developers manage application storage (session storage, local storage, and cookies) in their web applications.
 
 ## Features
 
-### MVP Features
-
--   Clear individual or combined storage types:
-    -   Session Storage
-    -   Local Storage
-    -   Cookies
--   Clear & Reload functionality:
-    -   Clear selected storage types
-    -   Automatically reload the page
--   Simple and intuitive user interface
--   Cross-browser support (Chrome & Edge)
+-   Clear session storage, local storage, or cookies individually or in combination
+-   One-click clear and reload functionality
+-   Simple checkbox interface for precise control
+-   Works entirely locally in your browser
+-   No data collection or tracking
+-   No external dependencies
 
 ## Installation
 
-_Coming soon - Extension will be available on Chrome Web Store and Microsoft Edge Add-ons_
+### Chrome Web Store
 
-## Development Setup
+1. Visit the [Chrome Web Store (coming soon - currently under review)](#)
+2. Click "Add to Chrome"
+3. Confirm the installation
+
+### Microsoft Edge Add-ons
+
+1. Visit the [Microsoft Edge Add-ons (coming soon - currently under review)](#)
+2. Click "Get"
+3. Confirm the installation
+
+## Local Development Setup
 
 1. Clone the repository:
 
@@ -37,10 +42,28 @@ cd dev-store-scrub
 ## Usage
 
 1. Click the extension icon in your browser toolbar
-2. Select the storage types you want to manage using checkboxes
+2. Select the storage types you want to manage
 3. Choose your action:
     - "Clear" - Clears selected storage types
     - "Clear & Reload" - Clears selected storage types and reloads the page
+
+## MVP
+
+![Dev Store Scrub Screenshot](store-assets/screenshots/main-screenshot.png)
+
+The Minimum Viable Product (MVP) includes:
+
+-   Basic storage management functionality
+-   Simple and intuitive user interface
+-   Cross-browser compatibility (Chrome and Edge)
+-   Essential features for developers
+
+## Development
+
+1. Clone the repository
+2. Open Chrome/Edge and navigate to the extensions page
+3. Enable "Developer mode"
+4. Click "Load unpacked" and select the project directory
 
 ## Contributing
 
@@ -50,7 +73,15 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Roadmap
+## Privacy
+
+Dev Store Scrub operates entirely locally in your browser. We do not collect, store, or transmit any personal data. Please read the [privacy policy](privacy-policy.md) for more details.
+
+## Support
+
+For support, feature requests, or bug reports, please contact me.
+
+## Future Roadmap
 
 -   [ ] Add search functionality for storage items
 -   [ ] Add ability to view storage contents

@@ -1,0 +1,108 @@
+{
+    "title": {
+        "type": "h1",
+        "text": "Dev Store Scrub",
+        "class": "title"
+    },
+    "storageOptions": {
+        "type": "div",
+        "class": "storage-options",
+        "children": [
+            {
+                "type": "label",
+                "class": "checkbox-container",
+                "children": [
+                    {
+                        "type": "input",
+                        "attributes": {
+                            "type": "checkbox",
+                            "id": "sessionStorage",
+                            "checked": true
+                        }
+                    },
+                    {
+                        "type": "span",
+                        "class": "checkmark"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Session Storage"
+                    }
+                ]
+            },
+            {
+                "type": "label",
+                "class": "checkbox-container",
+                "children": [
+                    {
+                        "type": "input",
+                        "attributes": {
+                            "type": "checkbox",
+                            "id": "localStorage",
+                            "checked": true
+                        }
+                    },
+                    {
+                        "type": "span",
+                        "class": "checkmark"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Local Storage"
+                    }
+                ]
+            },
+            {
+                "type": "label",
+                "class": "checkbox-container",
+                "children": [
+                    {
+                        "type": "input",
+                        "attributes": {
+                            "type": "checkbox",
+                            "id": "cookies",
+                            "checked": true
+                        }
+                    },
+                    {
+                        "type": "span",
+                        "class": "checkmark"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Cookies"
+                    }
+                ]
+            }
+        ]
+    },
+    "buttonContainer": {
+        "type": "div",
+        "class": "button-container",
+        "children": [
+            {
+                "type": "button",
+                "attributes": {
+                    "id": "clearBtn",
+                    "class": "btn primary"
+                },
+                "text": "Clear Selected"
+            },
+            {
+                "type": "button",
+                "attributes": {
+                    "id": "clearReloadBtn",
+                    "class": "btn secondary"
+                },
+                "text": "Clear & Reload"
+            }
+        ]
+    },
+    "status": {
+        "type": "div",
+        "attributes": {
+            "id": "status",
+            "class": "status"
+        }
+    }
+}

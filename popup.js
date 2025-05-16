@@ -163,10 +163,12 @@ class StorageManager {
         const success = await this.clearStorage();
         
         if (success) {
-            this.showStatus('Storage cleared successfully!');
             if (reload) {
+                this.showStatus('Storage cleared and page reloaded successfully!');
                 const activeTab = await chrome.tabs.query({ active: true, currentWindow: true });
                 chrome.tabs.reload(activeTab[0].id);
+            } else {
+                this.showStatus('Storage cleared successfully!');
             }
         } else {
             this.showStatus('Error clearing storage', true);

@@ -1,108 +1,371 @@
 {
     "title": {
-        "type": "h1",
-        "text": "Dev Store Scrub",
-        "class": "title"
-    },
-    "storageOptions": {
         "type": "div",
-        "class": "storage-options",
+        "class": "title-container",
         "children": [
             {
-                "type": "label",
-                "class": "checkbox-container",
-                "children": [
-                    {
-                        "type": "input",
-                        "attributes": {
-                            "type": "checkbox",
-                            "id": "sessionStorage",
-                            "checked": true
-                        }
-                    },
-                    {
-                        "type": "span",
-                        "class": "checkmark"
-                    },
-                    {
-                        "type": "text",
-                        "content": "Session Storage"
-                    }
-                ]
+                "type": "img",
+                "attributes": {
+                    "src": "icons/icon48.png",
+                    "alt": "Dev Store Scrub Icon",
+                    "class": "title-icon"
+                }
             },
             {
-                "type": "label",
-                "class": "checkbox-container",
-                "children": [
-                    {
-                        "type": "input",
-                        "attributes": {
-                            "type": "checkbox",
-                            "id": "localStorage",
-                            "checked": true
-                        }
-                    },
-                    {
-                        "type": "span",
-                        "class": "checkmark"
-                    },
-                    {
-                        "type": "text",
-                        "content": "Local Storage"
-                    }
-                ]
-            },
-            {
-                "type": "label",
-                "class": "checkbox-container",
-                "children": [
-                    {
-                        "type": "input",
-                        "attributes": {
-                            "type": "checkbox",
-                            "id": "cookies",
-                            "checked": true
-                        }
-                    },
-                    {
-                        "type": "span",
-                        "class": "checkmark"
-                    },
-                    {
-                        "type": "text",
-                        "content": "Cookies"
-                    }
-                ]
+                "type": "h1",
+                "text": "Dev Store Scrub",
+                "class": "title"
             }
         ]
     },
-    "buttonContainer": {
+    "tabs": {
         "type": "div",
-        "class": "button-container",
+        "class": "tabs",
         "children": [
             {
                 "type": "button",
                 "attributes": {
-                    "id": "clearBtn",
-                    "class": "btn primary"
+                    "class": "tab-btn active",
+                    "data-tab": "clear"
                 },
-                "text": "Clear Selected"
+                "text": "Clear"
             },
             {
                 "type": "button",
                 "attributes": {
-                    "id": "clearReloadBtn",
-                    "class": "btn secondary"
+                    "class": "tab-btn",
+                    "data-tab": "search"
                 },
-                "text": "Clear & Reload"
+                "text": "Search"
             }
         ]
     },
-    "status": {
+    "clearTab": {
         "type": "div",
         "attributes": {
-            "id": "status",
-            "class": "status"
-        }
+            "id": "clear-tab",
+            "class": "tab-content active"
+        },
+        "children": [
+            {
+                "type": "div",
+                "attributes": {
+                    "id": "app"
+                },
+                "children": [
+                    {
+                        "type": "div",
+                        "class": "storage-options",
+                        "children": [
+                            {
+                                "type": "label",
+                                "class": "checkbox-container",
+                                "children": [
+                                    {
+                                        "type": "input",
+                                        "attributes": {
+                                            "type": "checkbox",
+                                            "id": "sessionStorage",
+                                            "checked": true
+                                        }
+                                    },
+                                    {
+                                        "type": "span",
+                                        "class": "checkmark"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "content": "Session Storage"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "label",
+                                "class": "checkbox-container",
+                                "children": [
+                                    {
+                                        "type": "input",
+                                        "attributes": {
+                                            "type": "checkbox",
+                                            "id": "localStorage",
+                                            "checked": true
+                                        }
+                                    },
+                                    {
+                                        "type": "span",
+                                        "class": "checkmark"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "content": "Local Storage"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "label",
+                                "class": "checkbox-container",
+                                "children": [
+                                    {
+                                        "type": "input",
+                                        "attributes": {
+                                            "type": "checkbox",
+                                            "id": "cookies",
+                                            "checked": true
+                                        }
+                                    },
+                                    {
+                                        "type": "span",
+                                        "class": "checkmark"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "content": "Cookies"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "div",
+                        "class": "button-container",
+                        "children": [
+                            {
+                                "type": "button",
+                                "attributes": {
+                                    "id": "clearBtn",
+                                    "class": "btn primary"
+                                },
+                                "text": "Clear Selected"
+                            },
+                            {
+                                "type": "button",
+                                "attributes": {
+                                    "id": "clearReloadBtn",
+                                    "class": "btn secondary"
+                                },
+                                "text": "Clear & Reload"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "div",
+                        "attributes": {
+                            "id": "status",
+                            "class": "status"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "searchTab": {
+        "type": "div",
+        "attributes": {
+            "id": "search-tab",
+            "class": "tab-content"
+        },
+        "children": [
+            {
+                "type": "div",
+                "class": "search-container",
+                "children": [
+                    {
+                        "type": "div",
+                        "class": "search-controls",
+                        "children": [
+                            {
+                                "type": "div",
+                                "class": "select-group",
+                                "children": [
+                                    {
+                                        "type": "label",
+                                        "attributes": {
+                                            "for": "storageType",
+                                            "class": "select-label"
+                                        },
+                                        "text": "Storage type:"
+                                    },
+                                    {
+                                        "type": "select",
+                                        "attributes": {
+                                            "id": "storageType",
+                                            "class": "btn",
+                                            "aria-label": "Select storage type"
+                                        },
+                                        "children": [
+                                            {
+                                                "type": "option",
+                                                "attributes": {
+                                                    "value": "localStorage"
+                                                },
+                                                "text": "Local Storage"
+                                            },
+                                            {
+                                                "type": "option",
+                                                "attributes": {
+                                                    "value": "sessionStorage"
+                                                },
+                                                "text": "Session Storage"
+                                            },
+                                            {
+                                                "type": "option",
+                                                "attributes": {
+                                                    "value": "cookies"
+                                                },
+                                                "text": "Cookies"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "div",
+                                "class": "search-input-group",
+                                "children": [
+                                    {
+                                        "type": "input",
+                                        "attributes": {
+                                            "type": "text",
+                                            "id": "searchInput",
+                                            "class": "btn",
+                                            "placeholder": "Search..."
+                                        }
+                                    },
+                                    {
+                                        "type": "button",
+                                        "attributes": {
+                                            "id": "searchBtn",
+                                            "class": "btn primary"
+                                        },
+                                        "text": "Search"
+                                    },
+                                    {
+                                        "type": "button",
+                                        "attributes": {
+                                            "id": "clearSearchBtn",
+                                            "class": "btn"
+                                        },
+                                        "text": "Clear"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "div",
+                        "class": "filter-options",
+                        "children": [
+                            {
+                                "type": "span",
+                                "text": "Filter by:"
+                            },
+                            {
+                                "type": "label",
+                                "class": "radio-container",
+                                "children": [
+                                    {
+                                        "type": "input",
+                                        "attributes": {
+                                            "type": "radio",
+                                            "name": "filterType",
+                                            "value": "key",
+                                            "checked": true
+                                        }
+                                    },
+                                    {
+                                        "type": "span",
+                                        "class": "radio-label",
+                                        "text": "Key"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "label",
+                                "class": "radio-container",
+                                "children": [
+                                    {
+                                        "type": "input",
+                                        "attributes": {
+                                            "type": "radio",
+                                            "name": "filterType",
+                                            "value": "value"
+                                        }
+                                    },
+                                    {
+                                        "type": "span",
+                                        "class": "radio-label",
+                                        "text": "Value"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "label",
+                                "class": "radio-container",
+                                "children": [
+                                    {
+                                        "type": "input",
+                                        "attributes": {
+                                            "type": "radio",
+                                            "name": "filterType",
+                                            "value": "both"
+                                        }
+                                    },
+                                    {
+                                        "type": "span",
+                                        "class": "radio-label",
+                                        "text": "Both"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "div",
+                        "class": "results-container",
+                        "children": [
+                            {
+                                "type": "table",
+                                "attributes": {
+                                    "id": "resultsTable",
+                                    "class": "results-table"
+                                },
+                                "children": [
+                                    {
+                                        "type": "thead",
+                                        "children": [
+                                            {
+                                                "type": "tr",
+                                                "children": [
+                                                    {
+                                                        "type": "th",
+                                                        "text": "Key"
+                                                    },
+                                                    {
+                                                        "type": "th",
+                                                        "text": "Value"
+                                                    },
+                                                    {
+                                                        "type": "th",
+                                                        "text": "Delete"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "tbody"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "footer": {
+        "type": "div",
+        "class": "footer",
+        "text": "Built with ❤️ / © 2025 Deep Patel"
     }
 }

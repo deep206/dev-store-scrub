@@ -21,7 +21,7 @@ A simple yet powerful browser extension for Chrome and Edge that helps developer
 
 ### Microsoft Edge Add-ons
 
-1. Visit the [Microsoft Edge Add-ons (coming soon - currently under review)](#)
+1. Visit the [Microsoft Edge Add-on Link](https://microsoftedge.microsoft.com/addons/detail/dev-store-scrub/abmohanoloalofiemekiciipfpcknjpp)
 2. Click "Get"
 3. Confirm the installation
 

@@ -3,7 +3,7 @@
     "name": "Dev Store Scrub",
     "version": "1.0.0",
     "description": "A developer tool to manage application storage (session storage, local storage, and cookies) with clear and reload functionality",
-    "permissions": ["storage", "cookies", "tabs", "activeTab", "scripting"],
+    "permissions": ["cookies", "tabs", "activeTab", "scripting"],
     "host_permissions": ["<all_urls>"],
     "action": {
         "default_popup": "popup.html",

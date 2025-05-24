@@ -46,17 +46,24 @@ cd dev-store-scrub
 3. Choose your action:
     - "Clear" - Clears selected storage types
     - "Clear & Reload" - Clears selected storage types and reloads the page
+4. Keyboard Shortcuts
+    - Windows/Linux: `Alt+Shift+S`
+    - macOS: `Option+Shift+S`
 
 ## MVP
 
 ![Dev Store Scrub Screenshot](store-assets/screenshots/main-screenshot.png)
 
-The Minimum Viable Product (MVP) includes:
+The Minimum Viable Product (MVP) v1.0 includes:
 
 -   Basic storage management functionality
 -   Simple and intuitive user interface
 -   Cross-browser compatibility (Chrome and Edge)
 -   Essential features for developers
+
+## Version Updates
+
+-   1.1.0 - Added keyboard shortcut support for quick access
 
 ## Development
 
@@ -86,6 +93,6 @@ For support, feature requests, or bug reports, please contact me.
 -   [ ] Add search functionality for storage items
 -   [ ] Add ability to view storage contents
 -   [ ] Add support for IndexedDB
--   [ ] Add keyboard shortcuts
+-   [x] Add keyboard shortcut
 -   [ ] Add dark mode support
 -   [ ] Add customizable presets for common combinations

@@ -1,10 +1,21 @@
 {
     "manifest_version": 3,
     "name": "Dev Store Scrub",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "A developer tool to manage application storage (session storage, local storage, and cookies) with clear and reload functionality",
-    "permissions": ["cookies", "tabs", "activeTab", "scripting"],
+    "permissions": ["cookies", "tabs", "activeTab", "scripting", "commands"],
     "host_permissions": ["<all_urls>"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "commands": {
+        "open-extension": {
+            "suggested_key": {
+                "default": "Alt+Shift+S"
+            },
+            "description": "Open Dev Store Scrub extension"
+        }
+    },
     "action": {
         "default_popup": "popup.html",
         "default_icon": {

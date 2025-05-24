@@ -7,6 +7,8 @@ A simple yet powerful browser extension for Chrome and Edge that helps developer
 -   Clear session storage, local storage, or cookies individually or in combination
 -   One-click clear and reload functionality
 -   Simple checkbox interface for precise control
+-   Search functionality for storage items with filtering options
+-   Tab-based interface for Clear and Search operations
 -   Works entirely locally in your browser
 -   No data collection or tracking
 -   No external dependencies
@@ -42,28 +44,43 @@ cd dev-store-scrub
 ## Usage
 
 1. Click the extension icon in your browser toolbar
-2. Select the storage types you want to manage
-3. Choose your action:
-    - "Clear" - Clears selected storage types
-    - "Clear & Reload" - Clears selected storage types and reloads the page
-4. Keyboard Shortcuts
+2. Choose between "Clear" and "Search" tabs:
+    - Clear Tab:
+        - Select the storage types you want to manage
+        - Choose your action:
+            - "Clear" - Clears selected storage types
+            - "Clear & Reload" - Clears selected storage types and reloads the page
+    - Search Tab:
+        - Select storage type from dropdown
+        - Enter search term
+        - Choose search mode (Key, Value, or Both)
+        - View and manage search results
+3. Keyboard Shortcuts
     - Windows/Linux: `Alt+Shift+S`
     - macOS: `Option+Shift+S`
 
-## MVP
-
-![Dev Store Scrub Screenshot](store-assets/screenshots/main-screenshot.png)
-
-The Minimum Viable Product (MVP) v1.0 includes:
-
--   Basic storage management functionality
--   Simple and intuitive user interface
--   Cross-browser compatibility (Chrome and Edge)
--   Essential features for developers
-
 ## Version Updates
 
--   1.1.0 - Added keyboard shortcut support for quick access
+-   2.0.0 - Major feature update:
+
+    -   Added search functionality for storage items
+    -   Implemented tab-based interface (Clear and Search)
+    -   Added storage type dropdown with label
+    -   Added search input with filter options (Key, Value, Both)
+    -   Added results table with Delete action
+    -   Added app icon to title
+    -   Improved table layout and styling
+
+-   1.1.0 - Keyboard shortcut enhancement:
+
+    -   Added keyboard shortcut support (Alt+Shift+S / Option+Shift+S)
+    -   Added command registration in manifest
+
+-   1.0.0 - Initial release with:
+    -   Basic storage management functionality
+    -   Simple and intuitive user interface
+    -   Cross-browser compatibility (Chrome and Edge)
+    -   Essential features for developers
 
 ## Development
 
@@ -90,8 +107,8 @@ For support, feature requests, or bug reports, please contact me.
 
 ## Future Roadmap
 
--   [ ] Add search functionality for storage items
--   [ ] Add ability to view storage contents
+-   [x] Add search functionality for storage items
+-   [x] Add ability to view storage contents
 -   [ ] Add support for IndexedDB
 -   [x] Add keyboard shortcut
 -   [ ] Add dark mode support

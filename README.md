@@ -15,13 +15,13 @@ A simple yet powerful browser extension for Chrome and Edge that helps developer
 
 ### Chrome Web Store
 
-1. Visit the [Chrome Web Store (coming soon - currently under review)](#){:target="\_blank"}
+1. Visit the <a href="#" target="_blank">Chrome Web Store (coming soon - currently under review)</a>
 2. Click "Add to Chrome"
 3. Confirm the installation
 
 ### Microsoft Edge Add-ons
 
-1. Visit the [Microsoft Edge Add-on Link](https://microsoftedge.microsoft.com/addons/detail/dev-store-scrub/abmohanoloalofiemekiciipfpcknjpp){:target="\_blank"}
+1. Visit the <a href="https://microsoftedge.microsoft.com/addons/detail/dev-store-scrub/abmohanoloalofiemekiciipfpcknjpp" target="_blank">Microsoft Edge Add-on Link</a>
 2. Click "Get"
 3. Confirm the installation
 

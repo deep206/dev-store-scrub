@@ -17,7 +17,7 @@ A simple yet powerful browser extension for Chrome and Edge that helps developer
 
 ### Chrome Web Store
 
-1. Visit the <a href="https://chromewebstore.google.com/detail/dev-store-scrub/bachpkajfhidgchgljkhpccijlmooppc?hl=en-US&utm_source=ext_sidebar" target="_blank" rel="noopener noreferrer">Chrome Web Store (coming soon - currently under review)</a>
+1. Visit the <a href="https://chromewebstore.google.com/detail/dev-store-scrub/bachpkajfhidgchgljkhpccijlmooppc?hl=en-US&utm_source=ext_sidebar" target="_blank" rel="noopener noreferrer">Chrome Web Store</a>
 2. Click "Add to Chrome"
 3. Confirm the installation
 
